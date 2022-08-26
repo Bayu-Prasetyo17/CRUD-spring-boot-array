@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymealef.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/do-save-employee}" th:object="${employee}"
+    method="POST">
+      <input type="text" th:field="*{nama}" placeholder="please type your name"/>
+    <input type="text" th:field="*{address}" placeholder="please type your name"/>
+    <button type="submit">Save</button>
+</form>
+
+</body>
+</html>

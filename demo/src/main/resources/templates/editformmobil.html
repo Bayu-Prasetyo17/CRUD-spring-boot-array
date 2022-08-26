@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymealef.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/edit-mobil}" th:object="${editMobil}" method="POST">
+  <input type="text" th:field="*{merk}" placeholder="edit merk"/>
+  <input type="text" th:field="*{tahun}" placeholder="edit tahun"/>
+  <input type="text" th:field="*{type}" placeholder="edit type"/>
+  <input type="text" th:field="*{nama}" placeholder="edit nama"/>
+  <input type="number" th:field="*{id}" placeholder="   "/>
+  <button type="submit">Save</button>
+  <a href="/show-allmobil">go to all mobil</a>
+
+</form>
+
+</body>
+</html>

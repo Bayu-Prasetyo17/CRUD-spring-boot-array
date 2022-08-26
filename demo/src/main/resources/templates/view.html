@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymealef.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title> Insert </title>
+</head>
+<body>
+<h1  th:text="${fromServer}"> </h1>
+<h1  th:text="${attribute2}"> </h1>
+<h1  th:text="${namanama}"> </h1>
+
+<table>
+    <tr th:each="nama : ${namanama}">
+        <td th:text="${nama}"></td>
+    </tr>
+</table>
+</body>
+</html>

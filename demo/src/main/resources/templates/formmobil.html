@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymealef.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/save-car}" th:object="${formcar}" method="POST">
+  <input type="text" th:field="*{merk}" placeholder="please input your merk"/>
+  <input type="text" th:field="*{tahun}" placeholder="please input your tahun"/>
+  <input type="text" th:field="*{type}" placeholder="please input your type"/>
+  <input type="text" th:field="*{nama}" placeholder="please input your nama"/>
+  <button type="submit">Save</button>
+    <a href="/show-allmobil">go to all mobil</a>
+</form>
+
+</body>
+</html>

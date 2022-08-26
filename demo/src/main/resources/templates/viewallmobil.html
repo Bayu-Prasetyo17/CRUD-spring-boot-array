@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymealef.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr th:each="Mobil: ${showmobil}">
+    <td th:text="${Mobil.getMerk}"></td>
+    <td th:text="${Mobil.getTahun()}"></td>
+    <td th:text="${Mobil.getType()}"></td>
+    <td th:text="${Mobil.getNama()}"></td>
+  </tr>
+    <button><a href="/form-edit">edit</a></button>
+    <button><a href="/show-carform">add new</a></button>
+
+</table>
+</body>
+</html>
